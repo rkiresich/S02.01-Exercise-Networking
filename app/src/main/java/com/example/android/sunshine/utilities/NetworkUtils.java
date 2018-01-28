@@ -73,8 +73,6 @@ public final class NetworkUtils {
 
         Uri builtUri = Uri.parse(FORECAST_BASE_URL).buildUpon()
                 .appendQueryParameter(QUERY_PARAM, locationQuery)
-                .appendQueryParameter(LAT_PARAM, locationQuery)
-                .appendQueryParameter(LON_PARAM, locationQuery)
                 .appendQueryParameter(FORMAT_PARAM, format)
                 .appendQueryParameter(UNITS_PARAM, units)
                 .appendQueryParameter(DAYS_PARAM, String.valueOf(numDays))
